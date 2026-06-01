@@ -33,7 +33,7 @@ export default function BrandPage() {
 
   if (brandOnly.length === 0)
     return (
-      <Table sx={{ marginTop: "80px" }}>
+      <Table sx={{ marginTop: "95px" }}>
         <TableBody>
           <TableRow>
             <TableCell colSpan={3} align='center' sx={{ py: 8 }}>
