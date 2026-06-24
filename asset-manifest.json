@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/athar-perfume-store/static/css/main.271694f1.css",
-    "main.js": "/athar-perfume-store/static/js/main.c07c36ad.js",
+    "main.js": "/athar-perfume-store/static/js/main.51a2fe25.js",
     "static/js/453.e3815e42.chunk.js": "/athar-perfume-store/static/js/453.e3815e42.chunk.js",
     "static/media/Inter_18pt-Black.ttf": "/athar-perfume-store/static/media/Inter_18pt-Black.2615b19ab6fb503e6bb7.ttf",
     "static/media/Inter_18pt-Bold.ttf": "/athar-perfume-store/static/media/Inter_18pt-Bold.f0be7d273c3543fe4c4a.ttf",
@@ -25,11 +25,11 @@
     "static/media/Image-39.jpeg": "/athar-perfume-store/static/media/Image-39.cc3a070313cc5c2c1edd.jpeg",
     "index.html": "/athar-perfume-store/index.html",
     "main.271694f1.css.map": "/athar-perfume-store/static/css/main.271694f1.css.map",
-    "main.c07c36ad.js.map": "/athar-perfume-store/static/js/main.c07c36ad.js.map",
+    "main.51a2fe25.js.map": "/athar-perfume-store/static/js/main.51a2fe25.js.map",
     "453.e3815e42.chunk.js.map": "/athar-perfume-store/static/js/453.e3815e42.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.271694f1.css",
-    "static/js/main.c07c36ad.js"
+    "static/js/main.51a2fe25.js"
   ]
 }
