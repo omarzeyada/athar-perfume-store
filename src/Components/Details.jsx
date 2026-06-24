@@ -5,7 +5,6 @@ import {
   CardMedia,
   Typography,
   Box,
- 
   Accordion,
   AccordionDetails,
   AccordionSummary,
@@ -28,6 +27,7 @@ export default function Details() {
 
   return (
     <>
+      
       <Container maxWidth='xl' sx={{ m: "50px auto" }}>
         <Grid container spacing={4}>
           <Grid size={{ xs: 12, sm: 12, md: 4 }}>
