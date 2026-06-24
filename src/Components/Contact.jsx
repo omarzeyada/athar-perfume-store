@@ -112,13 +112,16 @@ export default function Contact() {
                 color='black'
                 fullWidth
                 sx={{
-                  background:
-                    "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)",
                   marginTop: "25px",
-                  borderRadius: "15px",
-                  color: "white",
+                  border: "1px solid #000",
+                  borderRadius: "800px",
+                  "&:hover": {
+                    backgroundColor: "#ffd700",
+                    color: "#fff",
+                    borderColor: "#ffd700",
+                  },
                 }}>
-                Sand Message
+                Send Message
               </Button>
             </form>
           </Grid>
@@ -203,11 +206,14 @@ export default function Contact() {
                   color='black'
                   fullWidth
                   sx={{
-                    background:
-                      "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)",
                     marginTop: "25px",
-                    borderRadius: "15px",
-                    color: "white",
+                    border: "1px solid #000",
+                    borderRadius: "800px",
+                    "&:hover": {
+                      backgroundColor: "#ffd700",
+                      color: "#fff",
+                      borderColor: "#ffd700",
+                    },
                   }}>
                   Chat on WhatsApp
                 </Button>
@@ -271,7 +277,6 @@ export default function Contact() {
           Location
         </Typography>
         <Box sx={{ width: "100%", mt: 4, textAlign: "center" }}>
-
           <Box
             component='div'
             sx={{

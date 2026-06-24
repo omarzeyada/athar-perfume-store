@@ -194,16 +194,6 @@ body {
   }
 }
 
-.line::after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 3px;
-  background-color: blue;
-  right: 0;
-  bottom: -4px;
-}
-
 .card {
   position: absolute;
   top: 15px;

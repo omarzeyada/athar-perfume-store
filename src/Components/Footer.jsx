@@ -27,8 +27,8 @@ export default function Footer() {
           <Grid size={{ xs: 12, sm: 6, md: 3 }}>
             <Typography
               variant='h6'
-              sx={{ fontWeight: "bold", mb: 2, color: "#ffc107" }}>
-              Athar
+              sx={{ fontWeight: "bold", mb: 2, color: "#ffd700" }}>
+              Athr
             </Typography>
             <Typography
               variant='body2'
@@ -69,19 +69,19 @@ export default function Footer() {
               <Link
                 href='/'
                 underline='none'
-                sx={{ color: "#b3b3b3", "&:hover": { color: "#ffffff" } }}>
+                sx={{ color: "#b3b3b3", "&:hover": { color: "#ffd700" } }}>
                 Home
               </Link>
               <Link
                 href='/aboutPage'
                 underline='none'
-                sx={{ color: "#b3b3b3", "&:hover": { color: "#ffffff" } }}>
+                sx={{ color: "#b3b3b3", "&:hover": { color: "#ffd700" } }}>
                 About Us
               </Link>
               <Link
                 href='/contact'
                 underline='none'
-                sx={{ color: "#b3b3b3", "&:hover": { color: "#ffffff" } }}>
+                sx={{ color: "#b3b3b3", "&:hover": { color: "#ffd700" } }}>
                 Contact
               </Link>
             </Box>
@@ -97,19 +97,19 @@ export default function Footer() {
               <Link
                 href='/brandPage'
                 underline='none'
-                sx={{ color: "#b3b3b3", "&:hover": { color: "#ffffff" } }}>
+                sx={{ color: "#b3b3b3", "&:hover": { color: "#ffd700" } }}>
                 Brands
               </Link>
               <Link
                 href='/giftPage'
                 underline='none'
-                sx={{ color: "#b3b3b3", "&:hover": { color: "#ffffff" } }}>
+                sx={{ color: "#b3b3b3", "&:hover": { color: "#ffd700" } }}>
                 Gifts
               </Link>
               <Link
                 href='/productPage'
                 underline='none'
-                sx={{ color: "#b3b3b3", "&:hover": { color: "#ffffff" } }}>
+                sx={{ color: "#b3b3b3", "&:hover": { color: "#ffd700" } }}>
                 Products
               </Link>
             </Box>
@@ -140,7 +140,7 @@ export default function Footer() {
               <Button
                 variant='contained'
                 sx={{
-                  backgroundColor: "#1976d2",
+                  backgroundColor: "#ffd700",
                   color: "#ffffff",
                   textTransform: "none",
                   borderRadius: "4px",
@@ -152,11 +152,11 @@ export default function Footer() {
                   bottom: "-10px",
                   transform: "translateY(-50%)",
                   "&:hover": {
-                    backgroundColor: "#115293",
+                    backgroundColor: "#e6ae04",
                     boxShadow: "none",
                   },
                 }}>
-                Sand
+                Send
               </Button>
             </Box>
           </Grid>
@@ -171,7 +171,7 @@ export default function Footer() {
           }}>
           <Typography variant='body2' sx={{ color: "#888888" }}>
             All rights reserved to Store{" "}
-            <span style={{ color: "#ffc107" }}>
+            <span style={{ color: "#ffd700" }}>
               {new Date().getFullYear()} ©
             </span>
           </Typography>

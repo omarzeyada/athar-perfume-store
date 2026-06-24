@@ -18,18 +18,18 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { loginSuccess } from "../features/add/userSlice";
 
 const pages = [
   { name: "Home", path: "/" },
-  { name: "Products", path: "/ProductPage" },
   { name: "About", path: "/about" },
-  { name: "Contact", path: "/contact" },
+  { name: "Products", path: "/ProductPage" },
   { name: "Brands", path: "/BrandPage" },
   { name: "Gifts", path: "/giftPage" },
+  { name: "Contact", path: "/contact" },
 ];
 
 function Navbar() {
@@ -67,16 +67,16 @@ function Navbar() {
     navigate("/newAccount");
   };
 
+  const cartItems = useSelector((state) => {
+    return state.cart.cartItems;
+  });
+  const dispatch = useDispatch();
 
+  const totalItemsCount = cartItems.reduce((acc, item) => {
+    return acc + (item.quantity || 1);
+  }, 0);
 
-      const cartItems = useSelector((state) => {
-        return state.cart.cartItems;
-      });
-      const dispatch = useDispatch();
-
-      const totalItemsCount = cartItems.reduce((acc, item) => {
-        return acc + (item.quantity || 1);
-      }, 0);
+  const location = useLocation();
 
   const handleOpenDashboard = () => {
     if (text.email === "Athar-Admen@gmail.com" && text.password === "Athar") {
@@ -100,9 +100,7 @@ function Navbar() {
       sx={{
         pl: { xs: 0, md: "27px" },
         pr: { xs: 0, md: "27px" },
-        background:
-          "linear-gradient(135deg, #ffc107 0%, rgba(255, 87, 34, 0.87) 100%)",
-        color: "white",
+        background: "#FAFAFA",
       }}>
       <Container maxWidth='xl'>
         <Toolbar
@@ -116,11 +114,11 @@ function Navbar() {
               display: { xs: "none", md: "flex" },
 
               letterSpacing: ".3rem",
-              color: "white",
+              color: "#ffd700",
               textDecoration: "none",
               fontWeight: "bold",
             }}>
-            ATHAR
+            ATHR
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -153,7 +151,8 @@ function Navbar() {
                   <div
                     sx={{
                       textAlign: "center",
-                      fontWeight: "200",
+                      color:
+                        location.pathname === page.path ? "#ffd700" : "black",
                     }}>
                     {page.name}
                   </div>
@@ -193,11 +192,11 @@ function Navbar() {
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
               letterSpacing: ".3rem",
-              color: "white",
+              color: "#ffd700",
               textDecoration: "none",
               fontWeight: "bold",
             }}>
-            ATHAR
+            ATHR
           </Typography>
           <Box
             sx={{
@@ -212,7 +211,7 @@ function Navbar() {
                 sx={{
                   my: 2,
                   mr: "10px",
-                  color: "white",
+                  color: location.pathname === page.path ? "#ffd700" : "black",
                   display: "block",
                   fontSize: "20px",
                 }}>

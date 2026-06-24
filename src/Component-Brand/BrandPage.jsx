@@ -79,14 +79,16 @@ export default function BrandPage() {
                 variant='outlined'
                 color='black'
                 sx={{
-                  backgroundColor: "#ffc107",
-                  padding: "5px 15px",
-                  marginTop: "30px",
-                  marginBottom: "20px",
-                  borderRadius: "10px",
-                  color: "white",
+                  padding: "5px 25px",
+                  margin: "20px",
+                  borderRadius: "800px",
+                  border: "1px solid #000",
                   fontSize: "19px",
-                  fontWeight: "bold",
+                  "&:hover": {
+                    backgroundColor: "#ffd700",
+                    color: "#fff",
+                    borderColor: "#ffd700",
+                  },
                 }}
                 onClick={() => navigate(`/brand/${brandName}`)}>
                 See More

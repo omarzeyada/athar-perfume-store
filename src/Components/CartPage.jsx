@@ -54,9 +54,9 @@ export default function CartPage() {
               key={item.id || index}
               size={{ xs: 12, sm: 12, md: 8 }}
               sx={{
-                background:
-                  "linear-gradient(135deg, #ffc107 0%, rgba(255, 87, 34, 0.87) 100%)",
-                color: "white",
+                background: "#FAFAFA",
+                color: "black",
+                boxShadow: "0 10px 20px rgba(0,0,0,0.12)",
               }}>
               <Box
                 sx={{
@@ -89,7 +89,7 @@ export default function CartPage() {
                   </Typography>
                   <Box
                     sx={{
-                      border: "1px solid #ffc107",
+                      border: "1px solid #000",
                       width: "fit-content",
                       borderRadius: "20px",
                     }}>
@@ -138,10 +138,10 @@ export default function CartPage() {
           <Grid
             size={{ xs: 12, sm: 12, md: 4 }}
             sx={{
-              background:
-                "linear-gradient(135deg, #ffc107 0%, rgba(255, 87, 34, 0.87) 100%)",
-              color: "white",
+              background: "#FAFAFA",
+              color: "black",
               padding: "20px",
+              boxShadow: "0 10px 20px rgba(0,0,0,0.12)",
             }}>
             <Typography
               variant='p'
@@ -185,13 +185,12 @@ export default function CartPage() {
               onClick={openBill}
               disabled={cartItems.length === 0}
               sx={{
-                backgroundColor: "#ffc107",
+                backgroundColor: "#ffd700",
                 padding: "5px 25px",
                 margin: "20px auto",
                 borderRadius: "800px",
-                color: "#212529",
+                color: "white",
                 fontSize: "19px",
-                fontWeight: "600",
               }}>
               Proceed with your purchase
             </Button>

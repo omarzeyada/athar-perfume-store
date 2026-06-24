@@ -59,8 +59,10 @@ export default function BrandCardPage({ product }) {
               justifyContent: "space-between",
               mt: "15px",
             }}>
-            <Typography variant='body1' component='span'>{product.size} ml</Typography>
-            <Typography variant='h5' sx={{ color: "#0d6efd" }}>
+            <Typography variant='body1' component='span'>
+              {product.size} ml
+            </Typography>
+            <Typography variant='h5' sx={{ color: "#ffd700" }}>
               {product.price} EGP
             </Typography>
           </Box>
@@ -79,10 +81,14 @@ export default function BrandCardPage({ product }) {
           fullWidth
           onClick={handleAddClick}
           sx={{
-            background: "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)",
             marginTop: "25px",
+            border: "1px solid #000",
             borderRadius: "800px",
-            color: "white",
+            "&:hover": {
+              backgroundColor: "#ffd700",
+              color: "#fff",
+              borderColor: "#ffd700",
+            },
           }}>
           <AddShoppingCartIcon sx={{ marginLeft: "5px" }} /> Add to cart
         </Button>

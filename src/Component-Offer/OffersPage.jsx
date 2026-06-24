@@ -1,6 +1,11 @@
 import OffersList from "./OffersList";
+import { Table, TableBody, TableCell, TableRow, Typography } from "@mui/material";
+import { Inventory } from "@mui/icons-material";
 
 export default function OffersPage() {
+
+  const items = OffersList();
+
   
   return (
     <>

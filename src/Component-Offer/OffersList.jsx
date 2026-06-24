@@ -61,13 +61,16 @@ export default function OffersList() {
               color='black'
               onClick={handleOpenOfferPage}
               sx={{
-                backgroundColor: "#ffc107",
                 padding: "5px 25px",
                 margin: "20px",
                 borderRadius: "800px",
-                color: "#212529",
+                border: "1px solid #000",
                 fontSize: "19px",
-                fontWeight: "600",
+                "&:hover": {
+                  backgroundColor: "#ffd700",
+                  color: "#fff",
+                  borderColor: "#ffd700",
+                },
               }}>
               See More
               <ArrowForwardIcon sx={{ marginLeft: "5px" }} />

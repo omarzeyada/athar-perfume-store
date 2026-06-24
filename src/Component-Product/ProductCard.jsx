@@ -6,7 +6,6 @@ import Button from "@mui/material/Button";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardActions from "@mui/material/CardActions";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
-import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../features/add/CartSlice";
@@ -65,7 +64,7 @@ export default function ProductCard({ product }) {
             </Typography>
             <Typography
               variant='h5'
-              sx={{ color: "#0d6efd", textAlign: "center" }}>
+              sx={{ color: "#ffb300", textAlign: "center" }}>
               {product.price} EGP
             </Typography>
           </CardContent>
@@ -83,14 +82,17 @@ export default function ProductCard({ product }) {
             fullWidth
             onClick={handleAddClick}
             sx={{
-              background: "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)",
               marginTop: "25px",
+              border: "1px solid #000",
               borderRadius: "800px",
-              color: "white",
+              "&:hover": {
+                backgroundColor: "#ffd700",
+                color: "#fff",
+                borderColor: "#ffd700",
+              },
             }}>
             <AddShoppingCartIcon sx={{ marginLeft: "5px" }} /> Add to cart
           </Button>
-          <FavoriteIcon sx={{ pt: "20px", fontSize: "32px" }} />
         </CardActions>
       </Card>
     </>

@@ -92,9 +92,9 @@ export default function Home() {
                       mr: "15px",
                       p: "7px 20px",
                       backgroundColor:
-                        activeGroup === "man" ? "#ffc107" : "transparent",
+                        activeGroup === "man" ? "#ffd700" : "transparent",
                     }}>
-                    Hi / him
+                    He / him
                   </Button>
                   <Button
                     variant='outlined'
@@ -105,7 +105,7 @@ export default function Home() {
                       fontWeight: "bold",
                       p: "7px 20px",
                       backgroundColor:
-                        activeGroup === "woman" ? "#ffc107" : "transparent",
+                        activeGroup === "woman" ? "#ffd700" : "transparent",
                     }}>
                     She / her
                   </Button>

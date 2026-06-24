@@ -4,18 +4,12 @@ import {
   CardActionArea,
   CardMedia,
   Typography,
-  Select,
-  FormControl,
-  MenuItem,
-  InputLabel,
   Box,
-  Button,
+ 
   Accordion,
   AccordionDetails,
   AccordionSummary,
-  IconButton,
 } from "@mui/material";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useSelector } from "react-redux";
 
@@ -34,10 +28,9 @@ export default function Details() {
 
   return (
     <>
-      {/* {details.map((det, index) => ( */}
       <Container maxWidth='xl' sx={{ m: "50px auto" }}>
         <Grid container spacing={4}>
-          <Grid size={{ xs: 12, sm: 12, md: 3 }}>
+          <Grid size={{ xs: 12, sm: 12, md: 4 }}>
             <CardActionArea>
               <CardMedia
                 component='img'
@@ -46,7 +39,7 @@ export default function Details() {
               />
             </CardActionArea>
           </Grid>
-          <Grid size={{ xs: 12, sm: 12, md: 6 }}>
+          <Grid size={{ xs: 12, sm: 12, md: 8 }}>
             <Typography
               variant='h6'
               sx={{ mb: "10px", pb: "10px", borderBottom: "2px solid #ddd" }}>
@@ -118,7 +111,7 @@ export default function Details() {
                 <span
                   style={{
                     color: "#4b2a98",
-                    marginLeft: "65px",
+                    marginLeft: "100px",
                     marginBottom: " 10px",
                   }}>
                   {det.gender}
@@ -172,56 +165,6 @@ export default function Details() {
               </li>
             </ul>
           </Grid>
-          <Grid
-            size={{ xs: 12, sm: 12, md: 3 }}
-            sx={{ border: "2px solid #ddd", mb: "12px", p: "20px" }}>
-            <Typography variant='h5' sx={{ mb: "7px" }}>
-              {det.price} EGP
-            </Typography>
-            <Typography variant='h6' sx={{ mb: "7px", textAlign: "center" }}>
-              Sunday, May 24
-            </Typography>
-            <Typography variant='h6' sx={{ mb: "7px", textAlign: "center" }}>
-              Or Tomorrow, May 23
-            </Typography>
-            <IconButton
-              sx={{ color: " #4b2a98", fontSize: "19px", mb: "10px" }}>
-              Delivery to Nwe Cairo City - Update Location <LocationOnIcon />
-            </IconButton>
-            <Box sx={{ minWidth: 120 }}>
-              <FormControl fullWidth>
-                <InputLabel id='demo-simple-select-label'>Age</InputLabel>
-                <Select
-                  labelId='demo-simple-select-label'
-                  id='demo-simple-select'
-                  label='Age'>
-                  <MenuItem>1</MenuItem>
-                  <MenuItem>2</MenuItem>
-                  <MenuItem>3</MenuItem>
-                  <MenuItem>4</MenuItem>
-                  <MenuItem>5</MenuItem>
-                  <MenuItem>6</MenuItem>
-                  <MenuItem>7</MenuItem>
-                  <MenuItem>8</MenuItem>
-                  <MenuItem>9</MenuItem>
-                  <MenuItem>10</MenuItem>
-                </Select>
-              </FormControl>
-              <Button
-                variant='outlined'
-                color='black'
-                fullWidth
-                sx={{
-                  background:
-                    "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)",
-                  marginTop: "25px",
-                  borderRadius: "800px",
-                  color: "white",
-                }}>
-                Add to cart
-              </Button>
-            </Box>
-          </Grid>
         </Grid>
         <Typography variant='h5' sx={{ mt: "40px", mb: "10px" }}>
           Product Information
@@ -231,8 +174,7 @@ export default function Details() {
             <Accordion>
               <AccordionSummary
                 sx={{
-                  background:
-                    "linear-gradient(135deg, #ffc107 0%, rgba(255, 87, 34, 0.87) 100%)",
+                  background: "#ffd700",
                 }}
                 expandIcon={<ExpandMoreIcon />}>
                 <Typography component='span'>Item Details</Typography>
@@ -335,8 +277,7 @@ export default function Details() {
             <Accordion>
               <AccordionSummary
                 sx={{
-                  background:
-                    "linear-gradient(135deg, #ffc107 0%, rgba(255, 87, 34, 0.87) 100%)",
+                  background: "#ffd700",
                 }}
                 expandIcon={<ExpandMoreIcon />}>
                 <Typography component='span'>
@@ -457,8 +398,7 @@ export default function Details() {
             <Accordion>
               <AccordionSummary
                 sx={{
-                  background:
-                    "linear-gradient(135deg, #ffc107 0%, rgba(255, 87, 34, 0.87) 100%)",
+                  background: "#ffd700",
                 }}
                 expandIcon={<ExpandMoreIcon />}>
                 <Typography component='span'>Measurements</Typography>
@@ -505,8 +445,7 @@ export default function Details() {
             <Accordion>
               <AccordionSummary
                 sx={{
-                  background:
-                    "linear-gradient(135deg, #ffc107 0%, rgba(255, 87, 34, 0.87) 100%)",
+                  background: "#ffd700",
                 }}
                 expandIcon={<ExpandMoreIcon />}>
                 <Typography component='span'>Material and Care</Typography>
